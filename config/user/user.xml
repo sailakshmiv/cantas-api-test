@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestApp name="Users">
+	<queryParam name="Users" url="user_list.html" outputFile="list.txt" />
+	<queryParam name="Userlist1" url="user_list.html" outputFile="list.txt" />
+	<queryParam name="Userlist2" url="user_list.html" outputFile="list.txt" />
+	<queryParam name="CreateUser1" url="user_create.html" outputFile="create.txt" />
+	<queryParam name="CreateUser2" url="user_create.html" outputFile="create.txt" />
+	<!-- <queryParam name="User_list" url="rest/hello" outputFile="helloworld1.txt" /> -->
+</TestApp>

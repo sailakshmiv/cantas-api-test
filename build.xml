@@ -1,0 +1,43 @@
+<project name="bluemeric" basedir=".">
+	<property name="basedir" value="." />
+	<property name="src-dir" location="src"/>
+	<property name="build-dir" location="bin"/>
+	<property name="classes-dir" value="${build-dir}"/>
+	<property name="dist-dir" location="dist"/>
+	<property name="lib-dir" value="jar_files"/>
+	<property name="jar-dir" value="${build-dir}/jar"/>
+	<property name="main-class" value="sai.Suite"/>
+	<property environment="env" />
+	<target name="clean">
+		<delete dir="bin"/>
+	</target>
+	<target name="compile" depends="clean">
+		<mkdir dir="bin"/>
+		<javac srcdir="src" destdir="bin" classpathref="classes" />
+	</target>
+	<path id="classes">
+		<fileset dir="jar_files">
+			<include name="**/*.jar" />
+		</fileset>
+	</path>
+	<target name="runTest" depends="compile">
+		<java classname="com.bluemeric.test.RunTest" fork="true">
+			<echo message="${env.APP_ENDPOINT}" />
+			<sysproperty key="PROJECT_HOME" value="${PROJECT_HOME}" />
+			<sysproperty key="APP_ENDPOINT" value="${env.APP_ENDPOINT}" />
+			<classpath>
+				<pathelement location="bin" />
+				<path refid="classes" />
+			</classpath>
+		</java>
+	</target>
+	<target name="jar" depends="compile">
+		<mkdir dir="bin/jar"/>
+		<jar destfile="bin/jar/HelloWorld.jar" basedir="bin">
+			<zipgroupfileset dir="jar_files" includes="*.jar"/>
+			<manifest>
+				<attribute name="Main-Class" value="com.bluemeric.test.RunTest"/>
+			</manifest>
+		</jar>
+	</target>
+</project>

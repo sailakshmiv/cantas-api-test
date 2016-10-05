@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestApp name="Cantas">
+	<queryParam name="GET-Cantas" url="login" outputFile="getcantas.txt" />
+	<queryParam name="POST-Cantas" url="login" outputFile="postcantas.txt" />
+	<queryParam name="DELETE-Cantas" url="login" outputFile="deletecantas.txt" />
+	<queryParam name="LIST-Cantas" url="auth/google" outputFile="getcantas1.txt" />
+</TestApp>

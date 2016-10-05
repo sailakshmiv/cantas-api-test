@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="" lang="">
+<head>
+  <title>Test Results Report - GET-Cantas</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="description" content="TestNG unit test results." />
+  <link href="reportng.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="reportng.js"></script>
+</head>
+<body>
+<h1>GET-Cantas</h1>
+<p>
+  Test duration: 0.404s
+</p>
+
+
+
+
+
+  <table class="resultsTable">
+    <tr><th colspan="3" class="header passed">Passed Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">com.bluemeric.test.GenerateTest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  getTest
+      </td>
+  <td class="duration">
+    0.404s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">"104.199.152.4:30000", "login", "getcantas.txt", "cantas"</span><br />
+    
+            <div class="testOutput">
+                        <br/>
+<br/>
+Get path : http://104.199.152.4:30000/login<br />
+                                <br/>
+ Response code received : 200<br />
+                                <br/>
+Response String received : &lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt;&lt;title&gt;New to Cantas?&lt;/title&gt;&lt;meta content=&quot;width=device-width, minimum-scale=1.0, maximum-scale=1.0&quot; name=&quot;viewport&quot;&gt;&lt;link href=&quot;/images/favicon.ico&quot; type=&quot;image/x-icon&quot; rel=&quot;shortcut icon&quot;&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;/stylesheets/eso-theme.css&quot;&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;/stylesheets/project.css&quot;&gt;&lt;/head&gt;&lt;body onload=&quot;init()&quot;&gt;&lt;section class=&quot;login&quot;&gt;&lt;div class=&quot;login-input card&quot;&gt;&lt;header&gt;&lt;img src=&quot;/images/cantas-login.png&quot; class=&quot;login-header&quot;&gt;&lt;/header&gt;&lt;form action=&quot;/login&quot; method=&quot;POST&quot;&gt;&lt;input type=&quot;text&quot; name=&quot;username&quot; id=&quot;username-login&quot; placeholder=&quot;Username&quot; tabindex=&quot;1&quot; a utocomplete=&quot;off&quot; autocorrect=&quot;off&quot; spellcheck=&quot;false&quot; autocapitalize=&quot;off&quot; autofocus=&quot;&quot;&gt;&lt;input type=&quot;password&quot; placeholder=&quot;Password&quot; name=&quot;password&quot; id=&quot;password-login&quot; tabindex=&quot;2&quot;&gt;&lt;button type=&quot;submit&quot; tabindex=&quot;3&quot; class=&quot;btn btn-inverse login-button&quot;&gt;Log In&lt;/button&gt;&lt;a id=&quot;loginWithGoogle&quot; href=&quot;/auth/google&quot;&gt;Log in with Google&lt;/a&gt;&lt;/form&gt;&lt;/div&gt;&lt;p&gt;&lt;/p&gt;&lt;/section&gt;&lt;div id=&quot;browser-version-alert&quot; class=&quot;force-alert hide fade&quot;&gt;&lt;div class=&quot;alert-content&quot;&gt;&lt;p&gt;Your browser&lt;span id=&quot;currentVersion&quot;&gt;&lt;/span&gt; is too low to run Cantas stably. We recommend Chrome 10+, FireFox 10+, Safari 6+ etc.&lt;/p&gt;&lt;a href=&quot;/standalonehelp#browserSupportMatrix&quot;&gt;Browser Support Matrix&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;script type=&quot;text/javascript&quot;&gt;function init(){<br/>
+&nbsp; var browserVersionInfo = {<br/>
+&nbsp;&nbsp;&nbsp; msie: false, firefox: false, opera: false, safari: false,<br/>
+&nbsp;&nbsp;&nbsp; name: &apos;unknown&apos;, version: 0<br/>
+&nbsp; },<br/>
+&nbsp; userAgent = window.navigator.userAgent.toLowerCase();<br/>
+&nbsp; if(/(msie|firefox|opera|chrome)\D+(\d[\d.]*)/.test(userAgent)) {<br/>
+&nbsp;&nbsp;&nbsp; browserVersionInfo[RegExp.$1] = true;<br/>
+&nbsp;&nbsp;&nbsp; browserVersionInfo.name = RegExp.$1;<br/>
+&nbsp;&nbsp;&nbsp; browserVersionInfo.version = RegExp.$2;<br/>
+&nbsp; }<br/>
+&nbsp; else if(/version\D+(\d[\d.]*).*safari/.test(userAgent)) {<br/>
+&nbsp;&nbsp;&nbsp; browserVersionInfo.safari = true;<br/>
+&nbsp;&nbsp;&nbsp; browserVersionInfo.name = &apos;safari&apos;;<br/>
+&nbsp;&nbsp;&nbsp; browserVersionInfo.version = RegExp.$1;<br/>
+&nbsp; }<br/>
+<br/>
+&nbsp; var browserName = browserVersionInfo.name;<br/>
+&nbsp; var version = browserVersionInfo.version;<br/>
+&nbsp; var majorVersion = version.slice(0,version.indexOf(&apos;.&apos;));<br/>
+&nbsp; var isLow = false;<br/>
+&nbsp; if(browserVersionInfo.chrome &amp;&amp; majorVersion &lt; 10) {<br/>
+&nbsp;&nbsp;&nbsp; isLow = true;<br/>
+&nbsp; }<br/>
+&nbsp; else if(browserVersionInfo.firefox &amp;&amp; majorVersion &lt; 10) {<br/>
+&nbsp;&nbsp;&nbsp; isLow = true;<br/>
+&nbsp; }<br/>
+&nbsp; else if(browserVersionInfo.safari &amp;&amp; majorVersion &lt; 6) {<br/>
+&nbsp;&nbsp;&nbsp; isLow = true;<br/>
+&nbsp; }<br/>
+&nbsp; if(isLow) {<br/>
+&nbsp;&nbsp;&nbsp; window.document.getElementById(&apos;currentVersion&apos;).textContent = browserName + &apos; &apos; + version;<br/>
+&nbsp;&nbsp;&nbsp; window.document.getElementById(&apos;browser-version-alert&apos;).setAttribute(&apos;class&apos;,&apos;force-alert fade&apos;);<br/>
+<br/>
+&nbsp;&nbsp;&nbsp; var loginForm = window.document.body.getElementsByTagName(&apos;form&apos;)[0];<br/>
+&nbsp;&nbsp;&nbsp; loginForm.parentNode.removeChild(loginForm);<br/>
+&nbsp; }<br/>
+<br/>
+};&lt;/script&gt;&lt;/body&gt;&lt;/html&gt;<br />
+                                <br/>
+Both response code and string are matching with expected output. Hence Passed the test.<br />
+                  </div>
+    
+
+      </td>
+</tr>
+      </table>
+  
+</body>
+</html>

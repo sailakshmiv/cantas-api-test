@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" total="4" passed="3">
+  <reporter-output>
+    <line>
+      <![CDATA[
+
+Get path : http://104.199.152.4:30000/login]]>
+    </line>
+    <line>
+      <![CDATA[
+ Response code received : 200]]>
+    </line>
+    <line>
+      <![CDATA[
+Response String received : <!DOCTYPE html><html><head><title>New to Cantas?</title><meta content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" name="viewport"><link href="/images/favicon.ico" type="image/x-icon" rel="shortcut icon"><link rel="stylesheet" href="/stylesheets/eso-theme.css"><link rel="stylesheet" href="/stylesheets/project.css"></head><body onload="init()"><section class="login"><div class="login-input card"><header><img src="/images/cantas-login.png" class="login-header"></header><form action="/login" method="POST"><input type="text" name="username" id="username-login" placeholder="Username" tabindex="1" a utocomplete="off" autocorrect="off" spellcheck="false" autocapitalize="off" autofocus=""><input type="password" placeholder="Password" name="password" id="password-login" tabindex="2"><button type="submit" tabindex="3" class="btn btn-inverse login-button">Log In</button><a id="loginWithGoogle" href="/auth/google">Log in with Google</a></form></div><p></p></section><div id="browser-version-alert" class="force-alert hide fade"><div class="alert-content"><p>Your browser<span id="currentVersion"></span> is too low to run Cantas stably. We recommend Chrome 10+, FireFox 10+, Safari 6+ etc.</p><a href="/standalonehelp#browserSupportMatrix">Browser Support Matrix</a></div></div><script type="text/javascript">function init(){
+  var browserVersionInfo = {
+    msie: false, firefox: false, opera: false, safari: false,
+    name: 'unknown', version: 0
+  },
+  userAgent = window.navigator.userAgent.toLowerCase();
+  if(/(msie|firefox|opera|chrome)\D+(\d[\d.]*)/.test(userAgent)) {
+    browserVersionInfo[RegExp.$1] = true;
+    browserVersionInfo.name = RegExp.$1;
+    browserVersionInfo.version = RegExp.$2;
+  }
+  else if(/version\D+(\d[\d.]*).*safari/.test(userAgent)) {
+    browserVersionInfo.safari = true;
+    browserVersionInfo.name = 'safari';
+    browserVersionInfo.version = RegExp.$1;
+  }
+
+  var browserName = browserVersionInfo.name;
+  var version = browserVersionInfo.version;
+  var majorVersion = version.slice(0,version.indexOf('.'));
+  var isLow = false;
+  if(browserVersionInfo.chrome && majorVersion < 10) {
+    isLow = true;
+  }
+  else if(browserVersionInfo.firefox && majorVersion < 10) {
+    isLow = true;
+  }
+  else if(browserVersionInfo.safari && majorVersion < 6) {
+    isLow = true;
+  }
+  if(isLow) {
+    window.document.getElementById('currentVersion').textContent = browserName + ' ' + version;
+    window.document.getElementById('browser-version-alert').setAttribute('class','force-alert fade');
+
+    var loginForm = window.document.body.getElementsByTagName('form')[0];
+    loginForm.parentNode.removeChild(loginForm);
+  }
+
+};</script></body></html>]]>
+    </line>
+    <line>
+      <![CDATA[
+Both response code and string are matching with expected output. Hence Passed the test.]]>
+    </line>
+    <line>
+      <![CDATA[
+
+Get path : http://104.199.152.4:30000/login]]>
+    </line>
+    <line>
+      <![CDATA[
+ Response code received : 200]]>
+    </line>
+    <line>
+      <![CDATA[
+Response String received : <!DOCTYPE html><html><head><title>New to Cantas?</title><meta content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" name="viewport"><link href="/images/favicon.ico" type="image/x-icon" rel="shortcut icon"><link rel="stylesheet" href="/stylesheets/eso-theme.css"><link rel="stylesheet" href="/stylesheets/project.css"></head><body onload="init()"><section class="login"><div class="login-input card"><header><img src="/images/cantas-login.png" class="login-header"></header><form action="/login" method="POST"><input type="text" name="username" id="username-login" placeholder="Username" tabindex="1" a utocomplete="off" autocorrect="off" spellcheck="false" autocapitalize="off" autofocus=""><input type="password" placeholder="Password" name="password" id="password-login" tabindex="2"><button type="submit" tabindex="3" class="btn btn-inverse login-button">Log In</button><a id="loginWithGoogle" href="/auth/google">Log in with Google</a></form></div><p></p></section><div id="browser-version-alert" class="force-alert hide fade"><div class="alert-content"><p>Your browser<span id="currentVersion"></span> is too low to run Cantas stably. We recommend Chrome 10+, FireFox 10+, Safari 6+ etc.</p><a href="/standalonehelp#browserSupportMatrix">Browser Support Matrix</a></div></div><script type="text/javascript">function init(){
+  var browserVersionInfo = {
+    msie: false, firefox: false, opera: false, safari: false,
+    name: 'unknown', version: 0
+  },
+  userAgent = window.navigator.userAgent.toLowerCase();
+  if(/(msie|firefox|opera|chrome)\D+(\d[\d.]*)/.test(userAgent)) {
+    browserVersionInfo[RegExp.$1] = true;
+    browserVersionInfo.name = RegExp.$1;
+    browserVersionInfo.version = RegExp.$2;
+  }
+  else if(/version\D+(\d[\d.]*).*safari/.test(userAgent)) {
+    browserVersionInfo.safari = true;
+    browserVersionInfo.name = 'safari';
+    browserVersionInfo.version = RegExp.$1;
+  }
+
+  var browserName = browserVersionInfo.name;
+  var version = browserVersionInfo.version;
+  var majorVersion = version.slice(0,version.indexOf('.'));
+  var isLow = false;
+  if(browserVersionInfo.chrome && majorVersion < 10) {
+    isLow = true;
+  }
+  else if(browserVersionInfo.firefox && majorVersion < 10) {
+    isLow = true;
+  }
+  else if(browserVersionInfo.safari && majorVersion < 6) {
+    isLow = true;
+  }
+  if(isLow) {
+    window.document.getElementById('currentVersion').textContent = browserName + ' ' + version;
+    window.document.getElementById('browser-version-alert').setAttribute('class','force-alert fade');
+
+    var loginForm = window.document.body.getElementsByTagName('form')[0];
+    loginForm.parentNode.removeChild(loginForm);
+  }
+
+};</script></body></html>]]>
+    </line>
+    <line>
+      <![CDATA[
+Both response code and string are matching with expected output. Hence Passed the test.]]>
+    </line>
+    <line>
+      <![CDATA[
+
+Get path : http://104.199.152.4:30000/login]]>
+    </line>
+    <line>
+      <![CDATA[
+ Response code received : 200]]>
+    </line>
+    <line>
+      <![CDATA[
+Response String received : <!DOCTYPE html><html><head><title>New to Cantas?</title><meta content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" name="viewport"><link href="/images/favicon.ico" type="image/x-icon" rel="shortcut icon"><link rel="stylesheet" href="/stylesheets/eso-theme.css"><link rel="stylesheet" href="/stylesheets/project.css"></head><body onload="init()"><section class="login"><div class="login-input card"><header><img src="/images/cantas-login.png" class="login-header"></header><form action="/login" method="POST"><input type="text" name="username" id="username-login" placeholder="Username" tabindex="1" a utocomplete="off" autocorrect="off" spellcheck="false" autocapitalize="off" autofocus=""><input type="password" placeholder="Password" name="password" id="password-login" tabindex="2"><button type="submit" tabindex="3" class="btn btn-inverse login-button">Log In</button><a id="loginWithGoogle" href="/auth/google">Log in with Google</a></form></div><p></p></section><div id="browser-version-alert" class="force-alert hide fade"><div class="alert-content"><p>Your browser<span id="currentVersion"></span> is too low to run Cantas stably. We recommend Chrome 10+, FireFox 10+, Safari 6+ etc.</p><a href="/standalonehelp#browserSupportMatrix">Browser Support Matrix</a></div></div><script type="text/javascript">function init(){
+  var browserVersionInfo = {
+    msie: false, firefox: false, opera: false, safari: false,
+    name: 'unknown', version: 0
+  },
+  userAgent = window.navigator.userAgent.toLowerCase();
+  if(/(msie|firefox|opera|chrome)\D+(\d[\d.]*)/.test(userAgent)) {
+    browserVersionInfo[RegExp.$1] = true;
+    browserVersionInfo.name = RegExp.$1;
+    browserVersionInfo.version = RegExp.$2;
+  }
+  else if(/version\D+(\d[\d.]*).*safari/.test(userAgent)) {
+    browserVersionInfo.safari = true;
+    browserVersionInfo.name = 'safari';
+    browserVersionInfo.version = RegExp.$1;
+  }
+
+  var browserName = browserVersionInfo.name;
+  var version = browserVersionInfo.version;
+  var majorVersion = version.slice(0,version.indexOf('.'));
+  var isLow = false;
+  if(browserVersionInfo.chrome && majorVersion < 10) {
+    isLow = true;
+  }
+  else if(browserVersionInfo.firefox && majorVersion < 10) {
+    isLow = true;
+  }
+  else if(browserVersionInfo.safari && majorVersion < 6) {
+    isLow = true;
+  }
+  if(isLow) {
+    window.document.getElementById('currentVersion').textContent = browserName + ' ' + version;
+    window.document.getElementById('browser-version-alert').setAttribute('class','force-alert fade');
+
+    var loginForm = window.document.body.getElementsByTagName('form')[0];
+    loginForm.parentNode.removeChild(loginForm);
+  }
+
+};</script></body></html>]]>
+    </line>
+    <line>
+      <![CDATA[
+Both response code and string are matching with expected output. Hence Passed the test.]]>
+    </line>
+    <line>
+      <![CDATA[
+
+Get path : http://104.199.152.4:30000/auth/google]]>
+    </line>
+    <line>
+      <![CDATA[
+ Response code received : 500]]>
+    </line>
+    <line>
+      <![CDATA[
+Response String received : Error: Unknown authentication strategy "googleOAuth"
+    at attempt (/node_modules/passport/lib/middleware/authenticate.js:166:37)
+    at authenticate (/node_modules/passport/lib/middleware/authenticate.js:342:7)
+    at callbacks (/node_modules/express/lib/router/index.js:272:11)
+    at param (/node_modules/express/lib/router/index.js:246:11)
+    at pass (/node_modules/express/lib/router/index.js:253:5)
+    at Router._dispatch (/node_modules/express/lib/router/index.js:280:5)
+    at Object.Router.middleware [as handle] (/node_modules/express/lib/router/index.js:45:10)
+    at next (/node_modules/express/node_modules/connect/lib/http.js:204:15)
+    at SessionStrategy.strategy.pass (/node_modules/passport/lib/middleware/authenticate.js:318:9)
+    at SessionStrategy.authenticate (/node_modules/passport/lib/strategies/session.js:67:10)]]>
+    </line>
+  </reporter-output>
+  <suite name="Cantas" duration-ms="1282" started-at="2016-10-05T06:42:08Z" finished-at="2016-10-05T06:42:09Z">
+    <groups>
+      <group name="get">
+        <method signature="GenerateTest.getTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bluemeric.test.GenerateTest@2cb4c3ab]" name="getTest" class="com.bluemeric.test.GenerateTest"/>
+        <method signature="GenerateTest.getTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bluemeric.test.GenerateTest@4fe3c938]" name="getTest" class="com.bluemeric.test.GenerateTest"/>
+        <method signature="GenerateTest.getTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bluemeric.test.GenerateTest@56235b8e]" name="getTest" class="com.bluemeric.test.GenerateTest"/>
+        <method signature="GenerateTest.getTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bluemeric.test.GenerateTest@3108bc]" name="getTest" class="com.bluemeric.test.GenerateTest"/>
+      </group> <!-- get -->
+    </groups>
+    <test name="GET-Cantas" duration-ms="421" started-at="2016-10-05T06:42:08Z" finished-at="2016-10-05T06:42:08Z">
+      <class name="com.bluemeric.test.GenerateTest">
+        <test-method status="PASS" signature="getTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bluemeric.test.GenerateTest@2cb4c3ab]" name="getTest" duration-ms="404" started-at="2016-10-05T06:42:08Z" finished-at="2016-10-05T06:42:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[104.199.152.4:30000]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[login]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[getcantas.txt]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[cantas]]>
+              </value>
+            </param>
+          </params>
+        </test-method> <!-- getTest -->
+      </class> <!-- com.bluemeric.test.GenerateTest -->
+    </test> <!-- GET-Cantas -->
+    <test name="POST-Cantas" duration-ms="294" started-at="2016-10-05T06:42:08Z" finished-at="2016-10-05T06:42:09Z">
+      <class name="com.bluemeric.test.GenerateTest">
+        <test-method status="PASS" signature="getTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bluemeric.test.GenerateTest@4fe3c938]" name="getTest" duration-ms="292" started-at="2016-10-05T06:42:08Z" finished-at="2016-10-05T06:42:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[104.199.152.4:30000]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[login]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[postcantas.txt]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[cantas]]>
+              </value>
+            </param>
+          </params>
+        </test-method> <!-- getTest -->
+      </class> <!-- com.bluemeric.test.GenerateTest -->
+    </test> <!-- POST-Cantas -->
+    <test name="DELETE-Cantas" duration-ms="286" started-at="2016-10-05T06:42:09Z" finished-at="2016-10-05T06:42:09Z">
+      <class name="com.bluemeric.test.GenerateTest">
+        <test-method status="PASS" signature="getTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bluemeric.test.GenerateTest@56235b8e]" name="getTest" duration-ms="283" started-at="2016-10-05T06:42:09Z" finished-at="2016-10-05T06:42:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[104.199.152.4:30000]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[login]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[deletecantas.txt]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[cantas]]>
+              </value>
+            </param>
+          </params>
+        </test-method> <!-- getTest -->
+      </class> <!-- com.bluemeric.test.GenerateTest -->
+    </test> <!-- DELETE-Cantas -->
+    <test name="LIST-Cantas" duration-ms="261" started-at="2016-10-05T06:42:09Z" finished-at="2016-10-05T06:42:09Z">
+      <class name="com.bluemeric.test.GenerateTest">
+        <test-method status="FAIL" signature="getTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bluemeric.test.GenerateTest@3108bc]" name="getTest" duration-ms="258" started-at="2016-10-05T06:42:09Z" finished-at="2016-10-05T06:42:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[104.199.152.4:30000]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[auth/google]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[getcantas1.txt]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[cantas]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Expected response code is 200. But got 500. Hence failed the test.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Expected response code is 200. But got 500. Hence failed the test.
+	at org.testng.Assert.fail(Assert.java:89)
+	at com.bluemeric.test.GenerateTest.getTest(GenerateTest.java:47)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:702)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:894)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1219)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:768)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1188)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1113)
+	at org.testng.TestNG.run(TestNG.java:1025)
+	at com.bluemeric.test.RunTest.runTests(RunTest.java:50)
+	at com.bluemeric.test.RunTest.main(RunTest.java:86)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+        </test-method> <!-- getTest -->
+      </class> <!-- com.bluemeric.test.GenerateTest -->
+    </test> <!-- LIST-Cantas -->
+  </suite> <!-- Cantas -->
+</testng-results>

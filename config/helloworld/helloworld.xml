@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestApp name="HelloWorld">
-	<queryParam name="HelloWorld" url="rest/hello" outputFile="helloworld.txt" />
-	<queryParam name="HelloWorld1" url="rest/hello" outputFile="helloworld1.txt" />
-</TestApp>

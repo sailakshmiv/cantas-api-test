@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="" lang="">
+<head>
+  <title>Test Results Report - LIST-Cantas</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="description" content="TestNG unit test results." />
+  <link href="reportng.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="reportng.js"></script>
+</head>
+<body>
+<h1>LIST-Cantas</h1>
+<p>
+  Test duration: 0.258s
+</p>
+
+
+
+  <table class="resultsTable">
+    <tr><th colspan="3" class="header failed">Failed Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">com.bluemeric.test.GenerateTest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  getTest
+      </td>
+  <td class="duration">
+    0.258s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">"104.199.152.4:30000", "auth/google", "getcantas1.txt", "cantas"</span><br />
+    
+            <div class="testOutput">
+                        <br/>
+<br/>
+Get path : http://104.199.152.4:30000/auth/google<br />
+                                <br/>
+ Response code received : 500<br />
+                                <br/>
+Response String received : Error: Unknown authentication strategy &quot;googleOAuth&quot;<br/>
+&nbsp;&nbsp;&nbsp; at attempt (/node_modules/passport/lib/middleware/authenticate.js:166:37)<br/>
+&nbsp;&nbsp;&nbsp; at authenticate (/node_modules/passport/lib/middleware/authenticate.js:342:7)<br/>
+&nbsp;&nbsp;&nbsp; at callbacks (/node_modules/express/lib/router/index.js:272:11)<br/>
+&nbsp;&nbsp;&nbsp; at param (/node_modules/express/lib/router/index.js:246:11)<br/>
+&nbsp;&nbsp;&nbsp; at pass (/node_modules/express/lib/router/index.js:253:5)<br/>
+&nbsp;&nbsp;&nbsp; at Router._dispatch (/node_modules/express/lib/router/index.js:280:5)<br/>
+&nbsp;&nbsp;&nbsp; at Object.Router.middleware [as handle] (/node_modules/express/lib/router/index.js:45:10)<br/>
+&nbsp;&nbsp;&nbsp; at next (/node_modules/express/node_modules/connect/lib/http.js:204:15)<br/>
+&nbsp;&nbsp;&nbsp; at SessionStrategy.strategy.pass (/node_modules/passport/lib/middleware/authenticate.js:318:9)<br/>
+&nbsp;&nbsp;&nbsp; at SessionStrategy.authenticate (/node_modules/passport/lib/strategies/session.js:67:10)<br />
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>java.lang.AssertionError: Expected response code is 200. But got 500. Hence failed the test.</b></a><br />
+    <div class="stackTrace" id="exception-0">
+              org.testng.Assert.fail(Assert.java:89)<br />
+              com.bluemeric.test.GenerateTest.getTest(GenerateTest.java:47)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br />
+              java.lang.reflect.Method.invoke(Unknown Source)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:702)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:894)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1219)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:768)<br />
+              org.testng.TestRunner.run(TestRunner.java:617)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:240)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1188)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1113)<br />
+              org.testng.TestNG.run(TestNG.java:1025)<br />
+              com.bluemeric.test.RunTest.runTests(RunTest.java:50)<br />
+              com.bluemeric.test.RunTest.main(RunTest.java:86)<br />
+                </div>
+      </td>
+</tr>
+      </table>
+
+
+  
+</body>
+</html>

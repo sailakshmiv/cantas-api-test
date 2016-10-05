@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG new reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Cantas">
+              <span class="suite-name border-failed">Cantas</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Cantas">
+                    <span>[unset file name]</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Cantas">
+                    <span class="test-stats">4 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Cantas">
+                    <span>1 group</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Cantas">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Cantas">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Cantas">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Cantas">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">4 methods, 1 failed,   3 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Cantas" class="hide-methods failed suite-Cantas"> (hide)</a> <!-- hide-methods failed suite-Cantas -->
+                      <a href="#" panel-name="suite-Cantas" class="show-methods failed suite-Cantas"> (show)</a> <!-- show-methods failed suite-Cantas -->
+                    </span>
+                    <div class="method-list-content failed suite-Cantas">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Cantas" title="com.bluemeric.test.GenerateTest" hash-for-method="getTest(104.199.152.4:30000, auth/google, getcantas1.txt, cantas)">getTest(104.199.152.4:30000, auth/google, getcantas1.txt, cantas)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Cantas -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Cantas" class="hide-methods passed suite-Cantas"> (hide)</a> <!-- hide-methods passed suite-Cantas -->
+                      <a href="#" panel-name="suite-Cantas" class="show-methods passed suite-Cantas"> (show)</a> <!-- show-methods passed suite-Cantas -->
+                    </span>
+                    <div class="method-list-content passed suite-Cantas">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Cantas" title="com.bluemeric.test.GenerateTest" hash-for-method="getTest(104.199.152.4:30000, login, getcantas.txt, cantas)">getTest(104.199.152.4:30000, login, getcantas.txt, cantas)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Cantas" title="com.bluemeric.test.GenerateTest" hash-for-method="getTest(104.199.152.4:30000, login, postcantas.txt, cantas)">getTest(104.199.152.4:30000, login, postcantas.txt, cantas)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Cantas" title="com.bluemeric.test.GenerateTest" hash-for-method="getTest(104.199.152.4:30000, login, deletecantas.txt, cantas)">getTest(104.199.152.4:30000, login, deletecantas.txt, cantas)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Cantas -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Cantas" class="panel Cantas">
+          <div class="suite-Cantas-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.bluemeric.test.GenerateTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getTest(104.199.152.4:30000, auth/google, getcantas1.txt, cantas)">
+                  </a> <!-- getTest(104.199.152.4:30000, auth/google, getcantas1.txt, cantas) -->
+                  <span class="method-name">getTest</span>
+                  <span class="parameters">(104.199.152.4:30000, auth/google, getcantas1.txt, cantas)</span>
+                  <div class="stack-trace"><b>"Expected response code is 200. But got 500. Hence failed the test."</b><br>org.testng.Assert.fail(Assert.java:89)<br>com.bluemeric.test.GenerateTest.getTest(GenerateTest.java:47)<br>sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br>sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br>java.lang.reflect.Method.invoke(Unknown Source)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br>org.testng.internal.Invoker.invokeMethod(Invoker.java:702)<br>org.testng.internal.Invoker.invokeTestMethod(Invoker.java:894)<br>org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1219)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br>org.testng.TestRunner.privateRun(TestRunner.java:768)<br>org.testng.TestRunner.run(TestRunner.java:617)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br>org.testng.SuiteRunner.run(SuiteRunner.java:240)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1188)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1113)<br>org.testng.TestNG.run(TestNG.java:1025)<br>com.bluemeric.test.RunTest.runTests(RunTest.java:50)<br>com.bluemeric.test.RunTest.main(RunTest.java:86)<br>
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Cantas-class-failed -->
+          <div class="suite-Cantas-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.bluemeric.test.GenerateTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getTest(104.199.152.4:30000, login, getcantas.txt, cantas)">
+                  </a> <!-- getTest(104.199.152.4:30000, login, getcantas.txt, cantas) -->
+                  <span class="method-name">getTest</span>
+                  <span class="parameters">(104.199.152.4:30000, login, getcantas.txt, cantas)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getTest(104.199.152.4:30000, login, postcantas.txt, cantas)">
+                  </a> <!-- getTest(104.199.152.4:30000, login, postcantas.txt, cantas) -->
+                  <span class="method-name">getTest</span>
+                  <span class="parameters">(104.199.152.4:30000, login, postcantas.txt, cantas)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getTest(104.199.152.4:30000, login, deletecantas.txt, cantas)">
+                  </a> <!-- getTest(104.199.152.4:30000, login, deletecantas.txt, cantas) -->
+                  <span class="method-name">getTest</span>
+                  <span class="parameters">(104.199.152.4:30000, login, deletecantas.txt, cantas)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Cantas-class-passed -->
+        </div> <!-- panel Cantas -->
+        <div panel-name="test-xml-Cantas" class="panel">
+          <div class="main-panel-header rounded-window-top">
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Cantas&quot;&gt;
+  &lt;test name=&quot;GET-Cantas&quot; preserve-order=&quot;true&quot;&gt;
+    &lt;parameter name=&quot;outputFile&quot; value=&quot;getcantas.txt&quot;/&gt;
+    &lt;parameter name=&quot;endpoint&quot; value=&quot;104.199.152.4:30000&quot;/&gt;
+    &lt;parameter name=&quot;url&quot; value=&quot;login&quot;/&gt;
+    &lt;parameter name=&quot;suiteName&quot; value=&quot;cantas&quot;/&gt;
+    &lt;groups&gt;
+      &lt;run&gt;
+        &lt;include name=&quot;get&quot;/&gt;
+      &lt;/run&gt;
+    &lt;/groups&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.bluemeric.test.GenerateTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- GET-Cantas --&gt;
+  &lt;test name=&quot;POST-Cantas&quot; preserve-order=&quot;true&quot;&gt;
+    &lt;parameter name=&quot;outputFile&quot; value=&quot;postcantas.txt&quot;/&gt;
+    &lt;parameter name=&quot;endpoint&quot; value=&quot;104.199.152.4:30000&quot;/&gt;
+    &lt;parameter name=&quot;url&quot; value=&quot;login&quot;/&gt;
+    &lt;parameter name=&quot;suiteName&quot; value=&quot;cantas&quot;/&gt;
+    &lt;groups&gt;
+      &lt;run&gt;
+        &lt;include name=&quot;get&quot;/&gt;
+      &lt;/run&gt;
+    &lt;/groups&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.bluemeric.test.GenerateTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- POST-Cantas --&gt;
+  &lt;test name=&quot;DELETE-Cantas&quot; preserve-order=&quot;true&quot;&gt;
+    &lt;parameter name=&quot;outputFile&quot; value=&quot;deletecantas.txt&quot;/&gt;
+    &lt;parameter name=&quot;endpoint&quot; value=&quot;104.199.152.4:30000&quot;/&gt;
+    &lt;parameter name=&quot;url&quot; value=&quot;login&quot;/&gt;
+    &lt;parameter name=&quot;suiteName&quot; value=&quot;cantas&quot;/&gt;
+    &lt;groups&gt;
+      &lt;run&gt;
+        &lt;include name=&quot;get&quot;/&gt;
+      &lt;/run&gt;
+    &lt;/groups&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.bluemeric.test.GenerateTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- DELETE-Cantas --&gt;
+  &lt;test name=&quot;LIST-Cantas&quot; preserve-order=&quot;true&quot;&gt;
+    &lt;parameter name=&quot;outputFile&quot; value=&quot;getcantas1.txt&quot;/&gt;
+    &lt;parameter name=&quot;endpoint&quot; value=&quot;104.199.152.4:30000&quot;/&gt;
+    &lt;parameter name=&quot;url&quot; value=&quot;auth/google&quot;/&gt;
+    &lt;parameter name=&quot;suiteName&quot; value=&quot;cantas&quot;/&gt;
+    &lt;groups&gt;
+      &lt;run&gt;
+        &lt;include name=&quot;get&quot;/&gt;
+      &lt;/run&gt;
+    &lt;/groups&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.bluemeric.test.GenerateTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- LIST-Cantas --&gt;
+&lt;/suite&gt; &lt;!-- Cantas --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Cantas" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Cantas</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">GET-Cantas (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">POST-Cantas (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">DELETE-Cantas (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">LIST-Cantas (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Cantas" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Cantas</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">get</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">getTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Cantas" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Cantas</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Cantas');
+function tableData_Cantas() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(4);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'getTest')
+data.setCell(0, 2, 'com.bluemeric.test.GenerateTest')
+data.setCell(0, 3, 404);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'getTest')
+data.setCell(1, 2, 'com.bluemeric.test.GenerateTest')
+data.setCell(1, 3, 292);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'getTest')
+data.setCell(2, 2, 'com.bluemeric.test.GenerateTest')
+data.setCell(2, 3, 283);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'getTest')
+data.setCell(3, 2, 'com.bluemeric.test.GenerateTest')
+data.setCell(3, 3, 258);
+window.suiteTableData['Cantas']= { tableData: data, tableDiv: 'times-div-Cantas'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 seconds</span>
+              <div id="times-div-Cantas">
+              </div> <!-- times-div-Cantas -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Cantas" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Cantas</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">getTest(104.199.152.4:30000, login, getcantas.txt, cantas)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">
+
+Get path : http://104.199.152.4:30000/login</span>
+                <span class="reporter-method-output">
+ Response code received : 200</span>
+                <span class="reporter-method-output">
+Response String received : <!DOCTYPE html><html><head><title>New to Cantas?</title><meta content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" name="viewport"><link href="/images/favicon.ico" type="image/x-icon" rel="shortcut icon"><link rel="stylesheet" href="/stylesheets/eso-theme.css"><link rel="stylesheet" href="/stylesheets/project.css"></head><body onload="init()"><section class="login"><div class="login-input card"><header><img src="/images/cantas-login.png" class="login-header"></header><form action="/login" method="POST"><input type="text" name="username" id="username-login" placeholder="Username" tabindex="1" a utocomplete="off" autocorrect="off" spellcheck="false" autocapitalize="off" autofocus=""><input type="password" placeholder="Password" name="password" id="password-login" tabindex="2"><button type="submit" tabindex="3" class="btn btn-inverse login-button">Log In</button><a id="loginWithGoogle" href="/auth/google">Log in with Google</a></form></div><p></p></section><div id="browser-version-alert" class="force-alert hide fade"><div class="alert-content"><p>Your browser<span id="currentVersion"></span> is too low to run Cantas stably. We recommend Chrome 10+, FireFox 10+, Safari 6+ etc.</p><a href="/standalonehelp#browserSupportMatrix">Browser Support Matrix</a></div></div><script type="text/javascript">function init(){
+  var browserVersionInfo = {
+    msie: false, firefox: false, opera: false, safari: false,
+    name: 'unknown', version: 0
+  },
+  userAgent = window.navigator.userAgent.toLowerCase();
+  if(/(msie|firefox|opera|chrome)\D+(\d[\d.]*)/.test(userAgent)) {
+    browserVersionInfo[RegExp.$1] = true;
+    browserVersionInfo.name = RegExp.$1;
+    browserVersionInfo.version = RegExp.$2;
+  }
+  else if(/version\D+(\d[\d.]*).*safari/.test(userAgent)) {
+    browserVersionInfo.safari = true;
+    browserVersionInfo.name = 'safari';
+    browserVersionInfo.version = RegExp.$1;
+  }
+
+  var browserName = browserVersionInfo.name;
+  var version = browserVersionInfo.version;
+  var majorVersion = version.slice(0,version.indexOf('.'));
+  var isLow = false;
+  if(browserVersionInfo.chrome && majorVersion < 10) {
+    isLow = true;
+  }
+  else if(browserVersionInfo.firefox && majorVersion < 10) {
+    isLow = true;
+  }
+  else if(browserVersionInfo.safari && majorVersion < 6) {
+    isLow = true;
+  }
+  if(isLow) {
+    window.document.getElementById('currentVersion').textContent = browserName + ' ' + version;
+    window.document.getElementById('browser-version-alert').setAttribute('class','force-alert fade');
+
+    var loginForm = window.document.body.getElementsByTagName('form')[0];
+    loginForm.parentNode.removeChild(loginForm);
+  }
+
+};</script></body></html></span>
+                <span class="reporter-method-output">
+Both response code and string are matching with expected output. Hence Passed the test.</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">getTest(104.199.152.4:30000, login, postcantas.txt, cantas)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">
+
+Get path : http://104.199.152.4:30000/login</span>
+                <span class="reporter-method-output">
+ Response code received : 200</span>
+                <span class="reporter-method-output">
+Response String received : <!DOCTYPE html><html><head><title>New to Cantas?</title><meta content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" name="viewport"><link href="/images/favicon.ico" type="image/x-icon" rel="shortcut icon"><link rel="stylesheet" href="/stylesheets/eso-theme.css"><link rel="stylesheet" href="/stylesheets/project.css"></head><body onload="init()"><section class="login"><div class="login-input card"><header><img src="/images/cantas-login.png" class="login-header"></header><form action="/login" method="POST"><input type="text" name="username" id="username-login" placeholder="Username" tabindex="1" a utocomplete="off" autocorrect="off" spellcheck="false" autocapitalize="off" autofocus=""><input type="password" placeholder="Password" name="password" id="password-login" tabindex="2"><button type="submit" tabindex="3" class="btn btn-inverse login-button">Log In</button><a id="loginWithGoogle" href="/auth/google">Log in with Google</a></form></div><p></p></section><div id="browser-version-alert" class="force-alert hide fade"><div class="alert-content"><p>Your browser<span id="currentVersion"></span> is too low to run Cantas stably. We recommend Chrome 10+, FireFox 10+, Safari 6+ etc.</p><a href="/standalonehelp#browserSupportMatrix">Browser Support Matrix</a></div></div><script type="text/javascript">function init(){
+  var browserVersionInfo = {
+    msie: false, firefox: false, opera: false, safari: false,
+    name: 'unknown', version: 0
+  },
+  userAgent = window.navigator.userAgent.toLowerCase();
+  if(/(msie|firefox|opera|chrome)\D+(\d[\d.]*)/.test(userAgent)) {
+    browserVersionInfo[RegExp.$1] = true;
+    browserVersionInfo.name = RegExp.$1;
+    browserVersionInfo.version = RegExp.$2;
+  }
+  else if(/version\D+(\d[\d.]*).*safari/.test(userAgent)) {
+    browserVersionInfo.safari = true;
+    browserVersionInfo.name = 'safari';
+    browserVersionInfo.version = RegExp.$1;
+  }
+
+  var browserName = browserVersionInfo.name;
+  var version = browserVersionInfo.version;
+  var majorVersion = version.slice(0,version.indexOf('.'));
+  var isLow = false;
+  if(browserVersionInfo.chrome && majorVersion < 10) {
+    isLow = true;
+  }
+  else if(browserVersionInfo.firefox && majorVersion < 10) {
+    isLow = true;
+  }
+  else if(browserVersionInfo.safari && majorVersion < 6) {
+    isLow = true;
+  }
+  if(isLow) {
+    window.document.getElementById('currentVersion').textContent = browserName + ' ' + version;
+    window.document.getElementById('browser-version-alert').setAttribute('class','force-alert fade');
+
+    var loginForm = window.document.body.getElementsByTagName('form')[0];
+    loginForm.parentNode.removeChild(loginForm);
+  }
+
+};</script></body></html></span>
+                <span class="reporter-method-output">
+Both response code and string are matching with expected output. Hence Passed the test.</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">getTest(104.199.152.4:30000, login, deletecantas.txt, cantas)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">
+
+Get path : http://104.199.152.4:30000/login</span>
+                <span class="reporter-method-output">
+ Response code received : 200</span>
+                <span class="reporter-method-output">
+Response String received : <!DOCTYPE html><html><head><title>New to Cantas?</title><meta content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" name="viewport"><link href="/images/favicon.ico" type="image/x-icon" rel="shortcut icon"><link rel="stylesheet" href="/stylesheets/eso-theme.css"><link rel="stylesheet" href="/stylesheets/project.css"></head><body onload="init()"><section class="login"><div class="login-input card"><header><img src="/images/cantas-login.png" class="login-header"></header><form action="/login" method="POST"><input type="text" name="username" id="username-login" placeholder="Username" tabindex="1" a utocomplete="off" autocorrect="off" spellcheck="false" autocapitalize="off" autofocus=""><input type="password" placeholder="Password" name="password" id="password-login" tabindex="2"><button type="submit" tabindex="3" class="btn btn-inverse login-button">Log In</button><a id="loginWithGoogle" href="/auth/google">Log in with Google</a></form></div><p></p></section><div id="browser-version-alert" class="force-alert hide fade"><div class="alert-content"><p>Your browser<span id="currentVersion"></span> is too low to run Cantas stably. We recommend Chrome 10+, FireFox 10+, Safari 6+ etc.</p><a href="/standalonehelp#browserSupportMatrix">Browser Support Matrix</a></div></div><script type="text/javascript">function init(){
+  var browserVersionInfo = {
+    msie: false, firefox: false, opera: false, safari: false,
+    name: 'unknown', version: 0
+  },
+  userAgent = window.navigator.userAgent.toLowerCase();
+  if(/(msie|firefox|opera|chrome)\D+(\d[\d.]*)/.test(userAgent)) {
+    browserVersionInfo[RegExp.$1] = true;
+    browserVersionInfo.name = RegExp.$1;
+    browserVersionInfo.version = RegExp.$2;
+  }
+  else if(/version\D+(\d[\d.]*).*safari/.test(userAgent)) {
+    browserVersionInfo.safari = true;
+    browserVersionInfo.name = 'safari';
+    browserVersionInfo.version = RegExp.$1;
+  }
+
+  var browserName = browserVersionInfo.name;
+  var version = browserVersionInfo.version;
+  var majorVersion = version.slice(0,version.indexOf('.'));
+  var isLow = false;
+  if(browserVersionInfo.chrome && majorVersion < 10) {
+    isLow = true;
+  }
+  else if(browserVersionInfo.firefox && majorVersion < 10) {
+    isLow = true;
+  }
+  else if(browserVersionInfo.safari && majorVersion < 6) {
+    isLow = true;
+  }
+  if(isLow) {
+    window.document.getElementById('currentVersion').textContent = browserName + ' ' + version;
+    window.document.getElementById('browser-version-alert').setAttribute('class','force-alert fade');
+
+    var loginForm = window.document.body.getElementsByTagName('form')[0];
+    loginForm.parentNode.removeChild(loginForm);
+  }
+
+};</script></body></html></span>
+                <span class="reporter-method-output">
+Both response code and string are matching with expected output. Hence Passed the test.</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">getTest(104.199.152.4:30000, auth/google, getcantas1.txt, cantas)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">
+
+Get path : http://104.199.152.4:30000/auth/google</span>
+                <span class="reporter-method-output">
+ Response code received : 500</span>
+                <span class="reporter-method-output">
+Response String received : Error: Unknown authentication strategy "googleOAuth"
+    at attempt (/node_modules/passport/lib/middleware/authenticate.js:166:37)
+    at authenticate (/node_modules/passport/lib/middleware/authenticate.js:342:7)
+    at callbacks (/node_modules/express/lib/router/index.js:272:11)
+    at param (/node_modules/express/lib/router/index.js:246:11)
+    at pass (/node_modules/express/lib/router/index.js:253:5)
+    at Router._dispatch (/node_modules/express/lib/router/index.js:280:5)
+    at Object.Router.middleware [as handle] (/node_modules/express/lib/router/index.js:45:10)
+    at next (/node_modules/express/node_modules/connect/lib/http.js:204:15)
+    at SessionStrategy.strategy.pass (/node_modules/passport/lib/middleware/authenticate.js:318:9)
+    at SessionStrategy.authenticate (/node_modules/passport/lib/strategies/session.js:67:10)</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Cantas" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Cantas" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.bluemeric.test.GenerateTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">getTest(104.199.152.4:30000, login, getcantas.txt, cantas)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getTest(104.199.152.4:30000, login, postcantas.txt, cantas)</span>
+                <span class="method-start">421 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getTest(104.199.152.4:30000, login, deletecantas.txt, cantas)</span>
+                <span class="method-start">718 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">getTest(104.199.152.4:30000, auth/google, getcantas1.txt, cantas)</span>
+                <span class="method-start">1009 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Cantas]">
+  <parameter name="outputFile" value="getcantas1.txt"/>
+  <parameter name="endpoint" value="104.199.152.4:30000"/>
+  <parameter name="url" value="auth/google"/>
+  <parameter name="suiteName" value="cantas"/>
+  <test name="LIST-Cantas(failed)" preserve-order="true">
+    <parameter name="outputFile" value="getcantas1.txt"/>
+    <parameter name="endpoint" value="104.199.152.4:30000"/>
+    <parameter name="url" value="auth/google"/>
+    <parameter name="suiteName" value="cantas"/>
+    <groups>
+      <run>
+        <include name="get"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.bluemeric.test.GenerateTest">
+        <methods>
+          <include name="getTest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.bluemeric.test.GenerateTest -->
+    </classes>
+  </test> <!-- LIST-Cantas(failed) -->
+</suite> <!-- Failed suite [Cantas] -->

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Users]">
+  <parameter name="outputFile" value="create.txt"/>
+  <parameter name="endpoint" value="104.199.152.4:30000"/>
+  <parameter name="url" value="user_create.html"/>
+  <parameter name="suiteName" value="users"/>
+  <test name="Users(failed)" preserve-order="true">
+    <parameter name="outputFile" value="list.txt"/>
+    <parameter name="endpoint" value="104.199.152.4:30000"/>
+    <parameter name="url" value="user_list.html"/>
+    <parameter name="suiteName" value="users"/>
+    <groups>
+      <run>
+        <include name="get"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.bluemeric.test.GenerateTest">
+        <methods>
+          <include name="getTest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.bluemeric.test.GenerateTest -->
+    </classes>
+  </test> <!-- Users(failed) -->
+  <test name="Userlist1(failed)" preserve-order="true">
+    <parameter name="outputFile" value="list.txt"/>
+    <parameter name="endpoint" value="104.199.152.4:30000"/>
+    <parameter name="url" value="user_list.html"/>
+    <parameter name="suiteName" value="users"/>
+    <groups>
+      <run>
+        <include name="get"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.bluemeric.test.GenerateTest">
+        <methods>
+          <include name="getTest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.bluemeric.test.GenerateTest -->
+    </classes>
+  </test> <!-- Userlist1(failed) -->
+  <test name="Userlist2(failed)" preserve-order="true">
+    <parameter name="outputFile" value="list.txt"/>
+    <parameter name="endpoint" value="104.199.152.4:30000"/>
+    <parameter name="url" value="user_list.html"/>
+    <parameter name="suiteName" value="users"/>
+    <groups>
+      <run>
+        <include name="get"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.bluemeric.test.GenerateTest">
+        <methods>
+          <include name="getTest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.bluemeric.test.GenerateTest -->
+    </classes>
+  </test> <!-- Userlist2(failed) -->
+  <test name="CreateUser1(failed)" preserve-order="true">
+    <parameter name="outputFile" value="create.txt"/>
+    <parameter name="endpoint" value="104.199.152.4:30000"/>
+    <parameter name="url" value="user_create.html"/>
+    <parameter name="suiteName" value="users"/>
+    <groups>
+      <run>
+        <include name="get"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.bluemeric.test.GenerateTest">
+        <methods>
+          <include name="getTest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.bluemeric.test.GenerateTest -->
+    </classes>
+  </test> <!-- CreateUser1(failed) -->
+  <test name="CreateUser2(failed)" preserve-order="true">
+    <parameter name="outputFile" value="create.txt"/>
+    <parameter name="endpoint" value="104.199.152.4:30000"/>
+    <parameter name="url" value="user_create.html"/>
+    <parameter name="suiteName" value="users"/>
+    <groups>
+      <run>
+        <include name="get"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.bluemeric.test.GenerateTest">
+        <methods>
+          <include name="getTest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.bluemeric.test.GenerateTest -->
+    </classes>
+  </test> <!-- CreateUser2(failed) -->
+</suite> <!-- Failed suite [Users] -->

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [HelloWorld]">
+  <parameter name="outputFile" value="helloworld1.txt"/>
+  <parameter name="endpoint" value="104.199.152.4:30000"/>
+  <parameter name="url" value="rest/hello"/>
+  <parameter name="suiteName" value="helloworld"/>
+  <test name="HelloWorld(failed)" preserve-order="true">
+    <parameter name="outputFile" value="helloworld.txt"/>
+    <parameter name="endpoint" value="104.199.152.4:30000"/>
+    <parameter name="url" value="rest/hello"/>
+    <parameter name="suiteName" value="helloworld"/>
+    <groups>
+      <run>
+        <include name="get"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.bluemeric.test.GenerateTest">
+        <methods>
+          <include name="getTest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.bluemeric.test.GenerateTest -->
+    </classes>
+  </test> <!-- HelloWorld(failed) -->
+  <test name="HelloWorld1(failed)" preserve-order="true">
+    <parameter name="outputFile" value="helloworld1.txt"/>
+    <parameter name="endpoint" value="104.199.152.4:30000"/>
+    <parameter name="url" value="rest/hello"/>
+    <parameter name="suiteName" value="helloworld"/>
+    <groups>
+      <run>
+        <include name="get"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.bluemeric.test.GenerateTest">
+        <methods>
+          <include name="getTest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.bluemeric.test.GenerateTest -->
+    </classes>
+  </test> <!-- HelloWorld1(failed) -->
+</suite> <!-- Failed suite [HelloWorld] -->

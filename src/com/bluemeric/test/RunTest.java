@@ -20,9 +20,12 @@ import com.bluemeric.common.TestApp;
 import com.bluemeric.common.Util;
 
 public class RunTest  implements ITestListener {
-	static String projectHome = System.getProperty("PROJECT_HOME") + "/";
-	static String endpoint = System.getProperty("APP_ENDPOINT"); 
+//	static String projectHome = System.getProperty("PROJECT_HOME") + "/";
+//	static String endpoint = System.getProperty("APP_ENDPOINT"); 
 
+	static String projectHome = System.getProperty("user.dir")+"/";//System.getProperty("PROJECT_HOME") + "/";
+	static String endpoint = "localhost:8080";
+	
 	List<XmlSuite> xmlSuites;
 	
 	RunTest() {

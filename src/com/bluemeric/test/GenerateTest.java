@@ -21,8 +21,8 @@ public class GenerateTest extends TestNG {
 	/**
 	 * @param args
 	 */
-	//static String projectHome = System.getProperty("user.dir")+"/";
-	static String projectHome = System.getProperty("PROJECT_HOME") + "/";
+	static String projectHome = System.getProperty("user.dir")+"/";
+	//static String projectHome = System.getProperty("PROJECT_HOME") + "/";
 	static Logger logger = Logger.getLogger(GenerateTest.class);
 	HttpConnection con ;
 
